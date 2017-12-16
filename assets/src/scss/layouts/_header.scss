@@ -1,0 +1,16 @@
+.header {
+  :before {
+    background-image: url(../../dist/images/header-bg.png);
+    background-repeat: no-repeat;
+  }
+  &__row {
+    @include flex-grid-row();
+
+  }
+  &__title {
+    @include flex-grid-column(6);
+  }
+  &__image {
+    @include flex-grid-column(6);
+  }
+}
