@@ -1,5 +1,9 @@
 .header {
   :before {
+    content:'';
+    display: inline-block;
+    z-index: -5;
+    position: absolute;
     background-image: url(../../dist/images/header-bg.png);
     background-repeat: no-repeat;
   }
