@@ -1,16 +1,68 @@
 .header {
-  :before {
-    background-image: url(../../dist/images/header-bg.png);
-    background-repeat: no-repeat;
-  }
-  &__row {
-    @include flex-grid-row();
-
-  }
+  background-image: url(../../dist/images/header-bg.png);
+  position: absolute;
   &__title {
-    @include flex-grid-column(6);
+    position: absolute;
+    top: 73px;
+    left: 231px;
   }
-  &__image {
-    @include flex-grid-column(6);
+  &__logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__sublogo {
+    position: relative;
+    top: 80px;
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 400;
+    width: 237px;
+    height: 103px;
+  }
+  &__description {
+    position: relative;
+    top: 131px;
+    width: 270px;
+    height: 39px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__man {
+    position: relative;
+    left: 582px;
+  }
+  &__figure {
+    &--toy {
+      position: relative;
+      top: 31px;
+      left: 130px;
+    }
+    &--half {
+      position: relative;
+      right: 309px;
+      top: 150px;
+
+    }
+    &--halfsec {
+      position: relative;
+      top: 229px;
+      right: 30px;
+    }
+    &--ball{
+      position: relative;
+      top: 215px;
+      left: 280px;
+    }
+  }
+  .button {
+    position: relative;
+    top: 200px;
+    border-radius: 30px;
+    background-image: linear-gradient(-225deg, #256dc2 0%, #10d5db 100%);
   }
 }
