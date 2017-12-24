@@ -1,0 +1,36 @@
+.main {
+  background-color: #ebebeb;
+  padding-top: 150px;
+  &__row {
+    @include flex-grid-row();
+  }
+  &__menu {
+    @include flex-grid-column();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 600px;
+    color: #333333;
+    &--list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--description {
+      @include flex-grid-column(10);
+    text-align: center;
+    }
+
+  }
+  &__title {
+    text-align: center;
+  }
+}
