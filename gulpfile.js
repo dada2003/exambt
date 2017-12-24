@@ -46,8 +46,9 @@ gulp.task('javascript', function (cb) {
                 'assets/components/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js',
                 'assets/components/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js',
                 'assets/components/foundation-sites/dist/js/plugins/foundation.orbit.js',
-                'assets/components/foundation-sites/dist/js/plugins/foundation..accordion.js',
+                'assets/components/foundation-sites/dist/js/plugins/foundation.accordion.js',
                 'assets/src/javascript/plugins/*.js',
+                'assets/src/javascript/*.js',
                 'assets/src/javascript/scripts.js'])
             .pipe(concat('global.js')),
             // uglify(),

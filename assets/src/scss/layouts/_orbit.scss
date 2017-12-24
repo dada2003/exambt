@@ -1,0 +1,22 @@
+.orbit {
+  min-height: 820px;
+  &__row {
+    @include flex-grid-row();
+    &__title {
+      text-align: center;
+    }
+    &__testimonials1 {
+      @include flex-grid-column(6);
+    }
+    &__testimonials2 {
+      @include flex-grid-column(6);
+    }
+    &__testimonials3 {
+      @include flex-grid-column(6);
+    }
+    &__testimonials4 {
+      @include flex-grid-column(6);
+    }
+
+  }
+}
